@@ -1,0 +1,29 @@
+/**
+ * Available Naming Convention rules
+ */
+export enum NamingConventionRule {
+    AvailabilitySet,
+    AzureApplicationGateway,
+    BestPractices,
+    BlobName,
+    ContainerName,
+    DataLakeStore,
+    FileName,
+    FunctionApp,
+    LoadBalancedRulesConfig,
+    LoadBalancer,
+    NetworkInterface,
+    NetworkSecurityGroup,
+    NetworkSecurityGroupRule,
+    PublicIPAddress,
+    QueueName,
+    ResourceGroup,
+    StorageAccountNameData,
+    StorageAccountNameDisks,
+    Subnet,
+    TableName,
+    TrafficManagerProfile,
+    VirtualMachineLinux,
+    VirtualMachineWindows,
+    VirtualNetworkVNet
+}

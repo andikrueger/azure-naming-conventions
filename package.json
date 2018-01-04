@@ -1,0 +1,96 @@
+{
+  "name": "azure-naming-conventions",
+  "version": "0.1.0",
+  "description": "library to test Azure resource names to meet the Azure naming conventions",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register src/types/**/*.spec.ts",
+    "test:watch": "mocha -w -r ts-node/register src/types/**/*.spec.ts",
+    "test:coverage": "nyc --coverage --reporter=text mocha -r ts-node/register src/types/**/*.spec.ts"
+  },
+  "keywords": [
+    "Azure",
+    "TypeScript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andikrueger/AzureNamingConvention.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andikrueger/AzureNamingConvention/issues"
+  },
+  "homepage": "https://github.com/andikrueger/AzureNamingConvention#readme",
+  "author": {
+    "name": "Andi Kruger",
+    "email": "solutions@andikrueger.de",
+    "url": "https://andikrueger.de"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.45",
+    "@types/sinon": "^4.1.2",
+    "@types/sinon-chai": "^2.7.29",
+    "chai": "^4.1.2",
+    "gulp": "^3.9.1",
+    "mocha": "^4.1.0",
+    "nyc": "^11.4.1",
+    "sinon": "^4.1.3",
+    "sinon-chai": "^2.14.0",
+    "ts-node": "^4.1.0"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 85,
+    "functions": 85,
+    "branches": 85,
+    "statements": 85,
+    "watermarks": {
+      "lines": [
+        85,
+        95
+      ],
+      "functions": [
+        85,
+        95
+      ],
+      "branches": [
+        85,
+        95
+      ],
+      "statements": [
+        85,
+        95
+      ]
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html",
+      "text"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "cache": true,
+    "all": true,
+    "report-dir": "./coverage"
+  },
+  "linterOptions": {
+    "exclude": [
+      "out"
+    ]
+  }
+}

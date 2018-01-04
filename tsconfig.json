@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "classic",
+        "declaration": true,
+        "rootDir": ".",
+        "sourceMap": true,
+        "outDir": "./dist"
+    },
+    "exclude": [
+        "node_modules",
+        "./*.spec.ts",
+        "dist"
+    ]
+}
