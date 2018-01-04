@@ -1,4 +1,5 @@
-# Module to test possible names to meet Azure Naming Convention
+# Azure Naming Conventions test tool
+
 
 [![MIT license](https://img.shields.io/npm/l/express.svg)](https://github.com/andikrueger/AzureNamingConventions/blob/master/LICENSE)
 
