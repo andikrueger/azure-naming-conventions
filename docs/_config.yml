@@ -1,2 +1,21 @@
 theme: jekyll-theme-cayman
 timezone: Europe/Berlin
+pages:
+  - Home: 'index.md'
+  - About:
+     - 'Release notes': 'about/release-notes.md'
+    - License: 'about/license.md'
+theme:
+  name: 'jekyll-theme-cayman'
+  palette:
+    primary: 'red'
+  feature:
+    tabs: true
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+repo_url: https://github.com/andikrueger/azure-naming-conventions
+edit_uri: blob/master/docs/
