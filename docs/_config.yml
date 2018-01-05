@@ -2,9 +2,6 @@ theme: jekyll-theme-cayman
 timezone: Europe/Berlin
 pages:
   - Home: 'index.md'
-  - About:
-     - 'Release notes': 'about/release-notes.md'
-    - License: 'about/license.md'
 theme:
   name: 'jekyll-theme-cayman'
   palette:
