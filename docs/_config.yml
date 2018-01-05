@@ -1,11 +1,8 @@
-theme: jekyll-theme-cayman
 timezone: Europe/Berlin
 pages:
   - Home: 'index.md'
 theme:
   name: 'jekyll-theme-cayman'
-  palette:
-    primary: 'red'
   feature:
     tabs: true
 markdown_extensions:
