@@ -2,32 +2,33 @@
   "name": "azure-naming-conventions",
   "version": "0.1.0",
   "description": "library to test Azure resource names to meet the Azure naming conventions",
+  "license": "MIT",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andikrueger/AzureNamingConvention.git"
+  },
+  "homepage": "https://andikrueger.github.io/azure-naming-conventions",
+  "bugs": {
+    "url": "https://github.com/andikrueger/AzureNamingConvention/issues"
+  },
   "scripts": {
-    "build": "tsc",
-    "test": "mocha -r ts-node/register src/types/**/*.spec.ts",
-    "test:watch": "mocha -w -r ts-node/register src/types/**/*.spec.ts",
-    "test:coverage": "nyc --coverage --reporter=text mocha -r ts-node/register src/types/**/*.spec.ts"
+    "build": "tsc -p .",
+    "watch": "tsc -w -p .",
+    "test" : "npm run build && nyc -r=lcov -r=text mocha \"dist/src/**/*.spec.js"
   },
   "keywords": [
     "Azure",
     "TypeScript"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/andikrueger/AzureNamingConvention.git"
-  },
-  "bugs": {
-    "url": "https://github.com/andikrueger/AzureNamingConvention/issues"
-  },
-  "homepage": "https://github.com/andikrueger/AzureNamingConvention#readme",
-  "author": {
-    "name": "Andi Kruger",
-    "email": "solutions@andikrueger.de",
-    "url": "https://andikrueger.de"
-  },
-  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Andi Kruger",
+      "email": "solutions@andikrueger.de",
+      "url": "https://andikrueger.de"
+    }
+  ],
   "devDependencies": {
     "@types/chai": "^4.0.10",
     "@types/mocha": "^2.2.45",
@@ -42,55 +43,6 @@
     "ts-node": "^4.1.0"
   },
   "nyc": {
-    "check-coverage": true,
-    "per-file": true,
-    "lines": 85,
-    "functions": 85,
-    "branches": 85,
-    "statements": 85,
-    "watermarks": {
-      "lines": [
-        85,
-        95
-      ],
-      "functions": [
-        85,
-        95
-      ],
-      "branches": [
-        85,
-        95
-      ],
-      "statements": [
-        85,
-        95
-      ]
-    },
-    "include": [
-      "src/**/*.ts",
-      "src/**/*.tsx"
-    ],
-    "extension": [
-      ".ts",
-      ".tsx"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "text-summary",
-      "html",
-      "text"
-    ],
-    "sourceMap": true,
-    "instrument": true,
-    "cache": true,
-    "all": true,
-    "report-dir": "./coverage"
-  },
-  "linterOptions": {
-    "exclude": [
-      "out"
-    ]
+    "exclude": "**/*.spec.js"
   }
 }

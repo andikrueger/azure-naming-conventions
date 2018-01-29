@@ -1,0 +1,12 @@
+.nyc_output
+coverage
+docs
+node_modules
+scripts
+src
+.gitignore
+.npmignore
+tasks.json
+tsconfig.json
+*.map
+*.spec.js
