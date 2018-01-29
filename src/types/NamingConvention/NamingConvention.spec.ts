@@ -5,11 +5,7 @@ import * as sinon from 'sinon';
 import * as sinonChai from 'sinon-chai';
 import * as chai from 'chai';
 import { expect } from 'chai';
-import { NamingConvention } from './NamingConvention';
-import { NamingConventionRule } from '../NamingConventionRule/NamingConventionRule';
-import { exec } from 'child_process';
-import { NamingConventionResult } from '../NamingConventionResult/NamingConventionResult';
-import { NamingConventionResultSet } from '../NamingConventionResultSet/NamingConventionResultSet';
+import { NamingConvention, NamingConventionResult, NamingConventionResultSet, NamingConventionRule } from '../../index';
 
 chai.use(sinonChai);
 

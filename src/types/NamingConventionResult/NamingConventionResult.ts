@@ -1,4 +1,4 @@
-import { NamingConventionRule } from '../NamingConventionRule/NamingConventionRule';
+import { NamingConventionRule } from '../../index';
 
 /**
  * Class to represent the detailed result of the naming convention test
@@ -7,10 +7,10 @@ export class NamingConventionResult {
     private _isValid: boolean;
     private _rule: NamingConventionRule;
 
-    public isValid(): boolean {
+    public get isValid(): boolean {
         return this._isValid;
     }
-    public rule(): NamingConventionRule {
+    public get rule(): NamingConventionRule {
         return this._rule;
     }
 

@@ -1,13 +1,11 @@
-import { NamingConventionRule } from '../NamingConventionRule/NamingConventionRule';
-import { NamingConventionResultSet } from '../NamingConventionResultSet/NamingConventionResultSet';
-import { NamingConventionResult } from '../NamingConventionResult/NamingConventionResult';
+import { NamingConventionRule, NamingConventionResult, NamingConventionResultSet } from '../../index';
 
 /**
  * Class to provide methods to check compliance of an Azure name to its naming convention
  */
 export class NamingConvention {
-    private name: string;
-    private ruleSet: NamingConventionRule;
+    public name: string;
+    public ruleSet: NamingConventionRule;
 
     constructor(name: string, ruleSet: NamingConventionRule) {
         this.name = name;

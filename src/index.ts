@@ -1,7 +1,4 @@
-import { NamingConvention } from './types/NamingConvention/NamingConvention';
-/**
- * @name AzureNamingConventions
- * @description Module to test strings against Azure Naming Conventions
- */
-
-export let azureNamingConventions: NamingConvention;
+export * from './types/NamingConvention/NamingConvention';
+export * from './types/NamingConventionRule/NamingConventionRule';
+export * from './types/NamingConventionResult/NamingConventionResult';
+export * from './types/NamingConventionResultSet/NamingConventionResultSet';
