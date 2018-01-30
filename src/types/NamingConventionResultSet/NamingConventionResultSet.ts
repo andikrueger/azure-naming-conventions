@@ -15,14 +15,18 @@ export class NamingConventionResultSet {
         return this._resultSet;
     }
 
+    /**
+     * Will return all failing rules as a comma seperated string.
+     */
     public toString(): string {
-        let retVal: string = 'Failing rules: ';
+        let retVal: string[] = new Array<string>();
+
         this._resultSet.forEach(element => {
             if (element.isValid === false) {
-                retVal += NamingConventionRule[element.rule] + ' ';
+                retVal.push(NamingConventionRule[element.rule]);
             }
         });
-        return retVal;
+        return retVal.join(', ');
     }
 
     /**
