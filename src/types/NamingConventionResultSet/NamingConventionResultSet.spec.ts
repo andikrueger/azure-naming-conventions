@@ -35,7 +35,13 @@ describe('NamingConventionResultSet', () => {
         namingConventionResultSet.addResult(fineResult);
 
         let resultString: string = namingConventionResultSet.toString();
-        expect(resultString).to.be.equals('Failing rules: BestPractices ');
+        expect(resultString).to.be.equals('BestPractices');
+
+        let failingResult2: NamingConventionResult = new NamingConventionResult(false, NamingConventionRule.AzureApplicationGateway);
+        namingConventionResultSet.addResult(failingResult2);
+
+        resultString = namingConventionResultSet.toString();
+        expect(resultString).to.be.equals('BestPractices, AzureApplicationGateway');
     });
 
     it('It should return the result set', () => {
