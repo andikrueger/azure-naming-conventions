@@ -1,6 +1,6 @@
 {
   "name": "azure-naming-conventions",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "library to test Azure resource names to meet the Azure naming conventions",
   "license": "MIT",
   "main": "dist/src/index.js",
