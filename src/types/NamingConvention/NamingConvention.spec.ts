@@ -198,12 +198,34 @@ describe('NamingConvention', () => {
         let test: string = 'test';
         naming = new NamingConvention(test, NamingConventionRule.StorageAccountNameData);
         let result: NamingConventionResultSet = naming.validate();
+        expect(result.isValid).to.be.eq(true);
+
+        let failingTest: string = 'test-test';
+        naming.name = failingTest;
+        result = naming.validate();
+        expect(result.isValid).to.be.eq(false);
+
+        failingTest = 'Test';
+        naming.name = failingTest;
+        result = naming.validate();
+        expect(result.isValid).to.be.eq(false);
     });
 
     it('It should validate "NamingConventionRule.StorageAccountNameDisks"', () => {
         let test: string = 'test';
         naming = new NamingConvention(test, NamingConventionRule.StorageAccountNameDisks);
         let result: NamingConventionResultSet = naming.validate();
+        expect(result.isValid).to.be.eq(true);
+
+        let failingTest: string = 'test-test';
+        naming.name = failingTest;
+        result = naming.validate();
+        expect(result.isValid).to.be.eq(false);
+
+        failingTest = 'Test';
+        naming.name = failingTest;
+        result = naming.validate();
+        expect(result.isValid).to.be.eq(false);
     });
 
     it('It should validate "NamingConventionRule.Subnet"', () => {
