@@ -7,11 +7,11 @@
   "types": "dist/src/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andikrueger/AzureNamingConvention.git"
+    "url": "https://github.com/andikrueger/azure-naming-conventions.git"
   },
-  "homepage": "https://andikrueger.github.io/azure-naming-conventions",
+  "homepage": "https://github.com/andikrueger/azure-naming-conventions",
   "bugs": {
-    "url": "https://github.com/andikrueger/AzureNamingConvention/issues"
+    "url": "https://github.com/andikrueger/azure-naming-conventions/issues"
   },
   "scripts": {
     "build": "tsc -p .",
